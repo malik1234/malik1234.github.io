@@ -1,0 +1,142 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mma-profile-img {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.mma-header, .mma-subheader {
+  text-align: center;
+}
+
+.mma-header {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.mma-subheader {
+  font-size: 18px;
+  color: #555;
+}
+
+.mma-intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.mma-contact a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.mma-contact a:hover {
+  text-decoration: underline;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mma-skills, .mma-projects, .mma-contact {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  width: 80%; /* You can adjust this value as per your preference */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mma-project {
+  margin-top: 20px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #005bb5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.mma-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* creates space between blobs */
+}
+
+.mma-skills li {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 25px; /* makes it look like a blob */
+  font-weight: bold;
+}
+
+.mma-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* creates space between projects */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mma-projects {
+      grid-template-columns: 1fr;
+  }
+}
